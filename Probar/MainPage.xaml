@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Probar.MainPage"
+             Title="Grid">
+
+    <Grid>
+        <Grid.RowDefinitions> <!--Defino Filas-->
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        
+        <Grid.ColumnDefinitions> <!--Defino Columnas-->
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <BoxView Color="Red" />
+        <Label Text="Jhoel Suarez" TextColor="Black"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center" />
+        <BoxView Grid.Column="1" Color="Blue" />
+        <Label Grid.Column="1" Text="Justin Gomezcoello" TextColor="Black"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center" />
+        <BoxView Grid.Row="1" Color="Cyan" />
+        <Label Grid.Row="1" Text="Stefan Jativa" TextColor="Black"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center" />
+        <BoxView Grid.Row="1" Grid.Column="1" Color="GreenYellow" />
+        <Label Grid.Row="1" Grid.Column="1" Text="Row1, Column 1"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center" />
+        <Button Grid.Row="1" Grid.Column="1"
+                Text="Ir a StackLayout >>" TextColor="White"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                Clicked="OnButtonClicked"
+                BackgroundColor="Black"/>
+    </Grid>
+
+</ContentPage>

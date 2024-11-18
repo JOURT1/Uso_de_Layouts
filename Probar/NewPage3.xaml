@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Probar.NewPage3"
+             Title="AbsoluteLayout"
+             BackgroundColor="Black">
+    
+    <ScrollView>
+        <AbsoluteLayout>
+            <Label Text="Blanca Nieves" FontSize="Header" HorizontalTextAlignment="Start" Margin="550,0,0,0" TextColor="Orange"/>
+            <!-- Etiqueta con texto largo para demostrar el scroll -->
+            <Label Text="Blanca Nieves era una joven princesa de extraordinaria belleza, conocida por su piel blanca como la nieve, labios rojos como la sangre y cabello negro como el ébano. Vivía en un reino gobernado por su vanidosa y malvada madrastra, la Reina, quien poseía un espejo mágico al que consultaba diariamente, preguntándole: Quién es la más bella de todas. Durante años, el espejo siempre respondía que la Reina era la más hermosa, lo que complacía su ego. Sin embargo, al crecer Blanca Nieves, su belleza se tornó incomparable, y un día, el espejo declaró que la joven princesa era ahora la más bella. Consumida por los celos y la ira, la Reina decidió deshacerse de Blanca Nieves y ordenó a un cazador que la llevara al bosque, la asesinara y le trajera su corazón como prueba. Sin embargo, el cazador, incapaz de matar a la inocente princesa, le perdonó la vida y le aconsejó que huyera lo más lejos posible. Blanca Nieves corrió por el bosque hasta que encontró una pequeña cabaña, hogar de siete enanos que trabajaban en una mina cercana. Los enanos, inicialmente desconfiados, decidieron acogerla tras escuchar su triste historia, y Blanca Nieves se convirtió en su amiga, ayudándoles con las tareas del hogar y llenando su vida de alegría. Mientras tanto, la Reina, creyendo haber eliminado a su rival, volvió a consultar a su espejo mágico, pero este le reveló que Blanca Nieves seguía viva y era la más bella del reino. Furiosa, la Reina recurrió a la magia oscura para disfrazarse y urdir un plan para acabar con Blanca Nieves. En su primer intento, se disfrazó de anciana vendedora y le ofreció un cinturón encantado que apretaba con fuerza, dejándola inconsciente. Sin embargo, los enanos llegaron a tiempo y lograron salvarla. En un segundo intento, la Reina, disfrazada nuevamente, le regaló un peine envenenado, pero los enanos otra vez intervinieron y la rescataron. Determinada a cumplir su cometido, la Reina preparó una manzana envenenada y volvió a disfrazarse, esta vez como una humilde campesina. Al morder la manzana, Blanca Nieves cayó en un sueño profundo, aparentemente muerta, y esta vez ni los enanos pudieron despertarla. Desconsolados, construyeron un ataúd de cristal y la colocaron en él para que su belleza pudiera ser admirada por todos."
+                   AbsoluteLayout.LayoutBounds="0.5, 100, 0.9, AutoSize"
+                   AbsoluteLayout.LayoutFlags="XProportional, WidthProportional" />
+
+            <Image
+                Source="img2.png"
+                HeightRequest="300"
+                WidthRequest="300"
+                Aspect="AspectFit"
+                Margin="550,350,0,0"
+                SemanticProperties.Description="Dotnet bot in a race car number eight"/>
+
+
+            <Label Text="Más contenido, desplazarse hacia abajo..."
+                   AbsoluteLayout.LayoutBounds="0.5, 600, 0.9, AutoSize"
+                   AbsoluteLayout.LayoutFlags="XProportional, WidthProportional" />
+
+            
+            <Label Text="Final del contenido, prueba de scroll."
+                   AbsoluteLayout.LayoutBounds="0.5, 1000, 0.9, AutoSize"
+                   AbsoluteLayout.LayoutFlags="XProportional, WidthProportional" />
+            
+            <Button Text="Ir a Grid>>" TextColor="White"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                Margin="1250,1100,60,60"
+                Clicked="OnButtonClicked"
+                BackgroundColor="Orange"/>
+        </AbsoluteLayout>
+    </ScrollView>
+</ContentPage>

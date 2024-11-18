@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Probar.NewPage1"
+             Title="StackLayout"
+             BackgroundColor="Black">
+
+    <StackLayout>
+        <VerticalStackLayout>
+        <Label 
+            Text="Bienvenido a StackLayout"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        </VerticalStackLayout>
+
+        <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+            <Label Text="" FontSize="Header" HorizontalTextAlignment="Center"/>
+            <Label Text="" FontSize="Header" HorizontalTextAlignment="Center"/>
+            <Label Text="HOLA MUNDO" FontSize="Header" HorizontalTextAlignment="Center"/>
+            <Label Text="HOLA MUNDO" FontSize="Large" HorizontalTextAlignment="Center"/>
+            <Label Text="HOLA MUNDO" FontSize="Medium" HorizontalOptions="Center" Margin="20,0"/>
+            <Label Text="HOLA MUNDO" FontSize="Subtitle" HorizontalOptions="Center" Margin="40,0"/>
+            <Label Text="HOLA MUNDO" FontSize="Small" HorizontalOptions="Center" Margin="60,0"/>
+            <Label Text="HOLA MUNDO" FontSize="Micro" HorizontalOptions="Center" Margin="80,0"/>
+            <Label Text="HOLA MUNDO" FontSize="Default" HorizontalOptions="Center" Margin="100,0"/>
+            <Label Text="" FontSize="Header" HorizontalTextAlignment="Center"/>
+        </StackLayout>
+
+        <Button Text="Ir a FlexLayout>>" TextColor="White"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                Clicked="OnButtonClicked"
+                BackgroundColor="Orange"/>
+        
+
+    </StackLayout>
+
+</ContentPage>

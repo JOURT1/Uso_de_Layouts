@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Probar.NewPage2"
+             Title="FlexLayout"
+             BackgroundColor="Black">
+
+    <FlexLayout Direction="Column" AlignItems="Start" >
+        <StackLayout Orientation="Horizontal" Margin="10">
+            <Image
+            Source="dotnet_bot.png"
+            HeightRequest="100"
+            WidthRequest="100"
+            Aspect="AspectFit"
+            Margin="0"
+            SemanticProperties.Description="Dotnet bot in a race car number eight">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnElementTapped" />
+                </Image.GestureRecognizers>
+            </Image>
+
+            <Label 
+            Text="Haga Clic" 
+            FontSize="Default" 
+            Style="{StaticResource Headline}"
+            VerticalTextAlignment="Center"
+            Margin="0,5,0,0">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnElementTapped" />
+                </Label.GestureRecognizers>
+            </Label>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" Margin="10">
+            <Image
+            Source="img.jpg"
+            HeightRequest="100"
+            WidthRequest="100"
+            Aspect="AspectFit"
+            Margin="0"
+            SemanticProperties.Description="Dotnet bot in a race car number eight">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnElementTapped" />
+                </Image.GestureRecognizers>
+            </Image>
+
+            <Label 
+            Text="Haga Clic 2" 
+            FontSize="Default" 
+            Style="{StaticResource Headline}"
+            VerticalTextAlignment="Center"
+            Margin="0,5,0,0">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnElementTapped" />
+                </Label.GestureRecognizers>
+            </Label>
+        </StackLayout>
+    </FlexLayout>
+</ContentPage>
