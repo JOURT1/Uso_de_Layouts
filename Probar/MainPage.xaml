@@ -5,7 +5,7 @@
              Title="Grid">
 
     <Grid>
-        <Grid.RowDefinitions> <!--Defino Filas-->
+        <Grid.RowDefinitions> <!--Defino Filas -->
             <RowDefinition />
             <RowDefinition />
         </Grid.RowDefinitions>
